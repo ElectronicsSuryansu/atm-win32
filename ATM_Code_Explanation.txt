@@ -1,0 +1,76 @@
+ATM APPLICATION CODE EXPLANATION
+===============================
+
+1. WHAT THE PROGRAM DOES:
+- This is an ATM (Automated Teller Machine) program with a graphical interface
+- It lets users create accounts, log in, check balances, deposit, and withdraw money
+- It has special admin features to manage all accounts
+
+2. MAIN PARTS OF THE CODE:
+
+A) USER ACCOUNT INFORMATION:
+- Each user has:
+  * Username (to log in)
+  * Password (for security)
+  * Account balance (how much money they have)
+  * Account status (frozen or active)
+
+B) IMPORTANT FUNCTIONS:
+
+1. User Management:
+- registerUser(): Creates new accounts
+- login(): Lets users access their accounts
+- adminLogin(): Special login for administrators
+
+2. Money Operations:
+- deposit(): Adds money to an account
+- withdraw(): Takes money from an account
+- checkBalance(): Shows how much money is in an account
+
+3. Admin Features:
+- resetUserPassword(): Changes any user's password
+- toggleAccountFreeze(): Freezes or unfreezes accounts
+- modifyUserBalance(): Changes account balances directly
+- viewTransactions(): Shows all transactions for any user
+
+C) HOW THE WINDOW WORKS:
+- The program creates buttons and text boxes for everything
+- There are different screens for:
+  * Login/registration
+  * Main menu (after login)
+  * Admin controls (special features)
+
+3. HOW TO USE THE PROGRAM:
+
+A) FOR REGULAR USERS:
+1. Click "Register" to create an account
+2. Log in with your username and password
+3. Choose what you want to do:
+   - Check your balance
+   - Deposit money
+   - Withdraw money
+   - View your transaction history
+   - Log out when done
+
+B) FOR ADMIN (Username: admin, Password: admin123):
+1. Log in as admin
+2. You can:
+   - See all users and their balances
+   - Reset any password
+   - Freeze/unfreeze accounts
+   - Add/remove money from any account
+   - View anyone's transaction history
+
+4. WHERE DATA IS SAVED:
+- User accounts: saved in "users.dat"
+- Transaction history: saved in "[username]_transactions.txt" files
+
+5. IMPORTANT SECURITY NOTES:
+- Never share your password
+- Admin has full control - use carefully!
+- Frozen accounts can't be accessed until unfrozen
+
+6. TROUBLESHOOTING:
+- Can't log in? Check your username and password
+- Account frozen? Contact admin
+- Program not working? Make sure all files are in the same folder
